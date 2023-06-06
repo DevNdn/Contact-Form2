@@ -9,12 +9,12 @@
 </head>
 <body>
   
-  <form id="formulario">
-    <h1>Formulário de Contato</h1>
+  <form id="formulario" autocomplete="off">
+    <legend>Formulário de Contato</legend>
     
   <fieldset>
     <label>Seu nome
-    <input type="text" id="name" placeholder="Insira seu nome...">
+    <input type="text" id="name" name="name" required placeholder="Nome completo...">
     </label>
   
     <label>Email
@@ -22,11 +22,11 @@
     </label>
 
     <label>Assunto
-    <input type="text" id="assunto" placeholder="Assunto...">
+    <input type="text" id="assunto" required placeholder="Assunto...">
     </label>
 
     <label for="msg">Mensagem
-    <textarea name="text" id="msg" cols="50" rows="10" placeholder="Deixe sua mensagem..."></textarea></label>
+    <textarea name="text" id="msg" rows="10" placeholder="Deixe sua mensagem..."></textarea></label>
 
     <div class="btn">
       <input type="reset" value="Apagar" class="btn-action apagar">
