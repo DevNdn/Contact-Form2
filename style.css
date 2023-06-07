@@ -71,13 +71,18 @@ input {
 
 input:hover {
   border-style: hidden;
-  border-bottom: 2px solid green;
+  border-bottom: 2px solid red;
   box-shadow: none;
   outline: none;
 }
-input:focus {
-  border: hidden;
+
+input:invalid:focus, textarea:invalid:focus {
   border-bottom: 2px solid red;
+}
+
+input:focus, textarea:focus {
+  border: hidden;
+  border-bottom: 2px solid green;
   box-shadow: none;
   outline: none;
 
